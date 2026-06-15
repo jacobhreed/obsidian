@@ -53,6 +53,85 @@ llm-wiki.md          CLAUDE.md               Wiki files
 
 ---
 
+## Setting up a new wiki
+
+This is exactly how the Best Bank wiki in this repo was initialized. Two files do all the work: `llm-wiki.md` (the pattern) and `initial-prompt.md` (the bootstrap prompt). You need both.
+
+### What you need before starting
+
+1. **Obsidian** installed and pointing at your vault folder
+2. **Claude Code** (this CLI) open in the vault directory — or any LLM agent that can read and write files in a working directory
+3. `llm-wiki.md` copied into the vault (or anywhere the LLM can read it)
+4. A folder of source files ready to ingest (optional for initialization, required to do anything useful)
+
+### Step 1 — Run the bootstrap prompt
+
+`initial-prompt.md` contains a single prompt:
+
+> *You are now my LLM Wiki agent. Implement the exact idea in `llm-wiki.md` as my complete second brain. Guide me step-by-step: create the CLAUDE.md schema file with full rules, set up index.md and log.md, define folder conventions, and show me the first ingest example. From now on, every interaction follows the schema.*
+
+Paste this into Claude (or select the file and submit it). That's the entire initialization trigger. The prompt does three things at once:
+
+- Assigns the LLM a persistent role ("you are my wiki agent")
+- Points it at `llm-wiki.md` as the source of truth for the pattern
+- Requests all the setup artifacts in one pass: `CLAUDE.md`, `index.md`, `log.md`, folder structure, and a first ingest example
+
+The LLM reads `llm-wiki.md`, derives a concrete schema appropriate for your domain, and writes everything. You don't author `CLAUDE.md` — the LLM generates it from the pattern document, then you evolve it together.
+
+### Step 2 — Tell Claude your domain
+
+After the bootstrap, Claude will ask (or you can volunteer) what the wiki is for. In this session, the response was:
+
+> *"I've pasted 14 files in the raw folder. Ingest all of these. This is a wiki for the company Best Bank."*
+
+Two pieces of information: the source material is ready, and the domain is Best Bank. Claude then:
+
+- Read all 15 source files in parallel
+- Wrote 15 source summary pages
+- Created 13 entity pages (products, systems, people, operations)
+- Created 4 concept pages (product funnel, revenue model, data architecture, culture)
+- Wrote a synthesized `wiki/overview.md`
+- Updated `index.md` and `log.md`
+
+The entire wiki — 47 interlinked pages — was built in a single session.
+
+### Step 3 — Browse in Obsidian while Claude writes
+
+You don't need to wait for Claude to finish. As soon as it starts writing files, Obsidian detects the changes and updates live. Open the graph view while the ingest is running and watch the node graph fill in. Click into any page as it appears. This is the intended workflow: LLM writes, you read in real time, you redirect if something looks off.
+
+### Step 4 — Continue in future sessions
+
+Because `CLAUDE.md` is in the vault and Claude Code reads it automatically at session start, every future conversation picks up where the last one left off. You don't re-explain the schema; Claude loads it from the file. The wiki is the persistent state; the chat history is ephemeral.
+
+To continue working: open Claude Code in the vault directory, and start with whatever you need — a new ingest, a query, a lint pass, or a schema update.
+
+```
+# Start a new session
+cd your-vault/
+claude   # CLAUDE.md is read automatically
+
+# Then just work
+> ingest raw/new-document.md
+> What are the three biggest risks to the 2026 plan?
+> lint
+```
+
+### The files that make it work
+
+| File | Written by | Purpose |
+|------|-----------|---------|
+| `llm-wiki.md` | You (copy once) | Describes the pattern — the *why* |
+| `initial-prompt.md` | You (copy once) | Bootstrap trigger — runs once to initialize |
+| `CLAUDE.md` | LLM (generated, then co-evolved) | The schema — the *exactly how* for this vault |
+| `index.md` | LLM (maintained) | Catalog of all wiki pages |
+| `log.md` | LLM (append-only) | Operation history |
+| `raw/*` | You (curate) | Immutable source documents |
+| `wiki/**` | LLM (owns entirely) | All synthesized knowledge pages |
+
+`llm-wiki.md` and `initial-prompt.md` are one-time inputs. Everything after that is driven by `CLAUDE.md`.
+
+---
+
 ## LLM Wiki vs. Traditional RAG
 
 ### What RAG does
