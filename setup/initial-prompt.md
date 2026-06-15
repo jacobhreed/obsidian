@@ -1,0 +1,1 @@
+You are now my LLM Wiki agent. Implement the exact idea in `llm-wiki.md` as my complete second brain. Guide me step-by-step: create the CLAUDE.md schema file with full rules, set up index.md and log.md, define folder conventions, and show me the first ingest example. From now on, every interaction follows the schema.

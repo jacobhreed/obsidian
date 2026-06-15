@@ -1,0 +1,6 @@
+product,tier,account_count,total_balance_usd,avg_balance_usd,illustrative_apy_pct,as_of_date
+Best Checking,Base,430000,1050000000,2442,0.00,2025-12-31
+Best Checking,Plus,78000,620000000,7949,0.00,2025-12-31
+Best Checking,Business,12000,530000000,44167,0.00,2025-12-31
+Best Savings,High-Yield Savings,240000,1350000000,5625,3.60,2025-12-31
+Best Savings,Certificate of Deposit,40000,650000000,16250,4.20,2025-12-31

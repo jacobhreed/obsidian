@@ -1,0 +1,15 @@
+branch_id,branch_name,type,city,state,opened_year,staff_count,status
+BR-001,South End Flagship,Headquarters,Charlotte,NC,2011,180,Active
+BR-002,Uptown Charlotte,Branch,Charlotte,NC,2012,24,Active
+BR-003,Ballantyne,Branch,Charlotte,NC,2015,18,Active
+BR-004,Raleigh Downtown,Branch,Raleigh,NC,2016,22,Active
+BR-005,Durham,Branch,Durham,NC,2017,16,Active
+BR-006,Atlanta Midtown,Branch,Atlanta,GA,2016,26,Active
+BR-007,Atlanta Buckhead,Branch,Atlanta,GA,2019,14,Review for consolidation
+BR-008,Nashville Gulch,Branch,Nashville,TN,2016,20,Active
+BR-009,Greenville,Branch,Greenville,SC,2018,12,Active
+BR-010,Charleston,Branch,Charleston,SC,2019,13,Active
+BR-011,Columbia,Branch,Columbia,SC,2020,11,Review for consolidation
+BR-012,Asheville,Branch,Asheville,NC,2021,10,Active
+BR-013,Charlotte Support Hub,Support Center,Charlotte,NC,2014,210,Active
+BR-014,Atlanta Support Hub,Support Center,Atlanta,GA,2020,140,Active
