@@ -1,0 +1,16 @@
+client_id,client_name,industry,relationship_manager,products,annual_revenue_usd,deposit_balance_usd,client_since
+BB-C-1001,Northwind Traders,Retail,Derek Voss,Best Business Checking; Best Savings,42000000,3100000,2017
+BB-C-1002,Sterling Logistics,Transportation,Amara Osei,Best Business Checking; Best Line of Credit,88000000,5400000,2016
+BB-C-1003,Meridian Health Group,Healthcare,Liam Brennan,Best Business Checking; Best Savings; Best Credit Card,210000000,12800000,2019
+BB-C-1004,Cascade Coffee Roasters,Food & Beverage,Sandra Pierce,Best Business Checking,9500000,720000,2021
+BB-C-1005,Pinnacle Property Group,Real Estate,Derek Voss,Best Business Checking; Best Savings,156000000,9300000,2018
+BB-C-1006,Lumen Software,Technology,Amara Osei,Best Business Checking; Best Savings,67000000,8100000,2022
+BB-C-1007,Harborview Restaurants,Hospitality,Sandra Pierce,Best Business Checking; Best Line of Credit,31000000,1450000,2020
+BB-C-1008,Ironwood Construction,Construction,Liam Brennan,Best Business Checking; Best Line of Credit,124000000,6700000,2017
+BB-C-1009,Aster Botanicals,Consumer Goods,Sandra Pierce,Best Business Checking,18000000,990000,2023
+BB-C-1010,Vertex Manufacturing,Manufacturing,Derek Voss,Best Business Checking; Best Savings,198000000,11200000,2015
+BB-C-1011,Bluefin Seafood Co,Food & Beverage,Amara Osei,Best Business Checking,26000000,1320000,2021
+BB-C-1012,Quill and Press,Publishing,Liam Brennan,Best Business Checking; Best Savings,14000000,860000,2022
+BB-C-1013,Summit Outdoor Gear,Retail,Sandra Pierce,Best Business Checking; Best Credit Card,53000000,2900000,2019
+BB-C-1014,Riverside Dental Partners,Healthcare,Liam Brennan,Best Business Checking,11500000,640000,2023
+BB-C-1015,Greenline Freight,Transportation,Amara Osei,Best Business Checking; Best Line of Credit,72000000,4100000,2018
