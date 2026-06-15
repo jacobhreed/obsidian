@@ -22,7 +22,7 @@ These two files operate at different levels of abstraction and serve different a
 
 ### `llm-wiki.md` — The pattern
 
-`llm-wiki.md` is an **idea document**. It describes the LLM Wiki pattern in the abstract: the core insight (compile knowledge incrementally rather than re-derive it at query time), the three-layer architecture (raw sources / wiki / schema), the three operations (ingest / query / lint), and the role of `index.md` and `log.md`. It is intentionally domain-agnostic — it says nothing about Best Bank, nothing about folder names, nothing about frontmatter fields.
+`llm-wiki.md` is an **idea document** written by [Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#file-llm-wiki-md). It describes the LLM Wiki pattern in the abstract: the core insight (compile knowledge incrementally rather than re-derive it at query time), the three-layer architecture (raw sources / wiki / schema), the three operations (ingest / query / lint), and the role of `index.md` and `log.md`. It is intentionally domain-agnostic — it says nothing about Best Bank, nothing about folder names, nothing about frontmatter fields.
 
 Its job is to communicate the pattern to a human (or an LLM starting a new project) so they understand *why* the system is structured the way it is. It is the spec; it is not the implementation.
 
